@@ -1,5 +1,28 @@
 # Example scripts for the repo
 
+## Fork Management Scripts
+
+These scripts help you manage your fork of the Foundation Model Stack repository:
+
+### setup_fork.sh
+Configures your fork to properly track the upstream repository. Run this once after cloning your fork:
+```bash
+./scripts/setup_fork.sh
+```
+
+### sync_fork.sh
+Keeps your fork synchronized with the upstream repository:
+```bash
+./scripts/sync_fork.sh
+```
+
+Options:
+- `--branch BRANCH` or `-b BRANCH`: Sync from a specific upstream branch
+- `--force` or `-f`: Force sync even with uncommitted changes
+- `--help` or `-h`: Show help
+
+For detailed fork management instructions, see [FORK_MANAGEMENT.md](../FORK_MANAGEMENT.md).
+
 ## Inference script
 
 This example script validates the LLaMA implementation by running inference on a couple of prompts.

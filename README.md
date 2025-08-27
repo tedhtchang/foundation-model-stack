@@ -104,6 +104,27 @@ See options in the script for other ways to train and tune.
 * `fms/utils/` - Other operators useful in working with LLMs. These include a `generate()` function, `Tensor` subclasses, code for dealing with LLM checkpoints that might be saved/sharded in a variety of formats, tokenization code, and various other useful helper functions.
 * `scripts/` - Various scripts for inference, benchmarking, and evaluation, as well as an entry-point for tuning/training.
 
+## Fork Management
+
+If you're working with a fork of this repository, we provide helpful scripts and documentation to manage your fork effectively:
+
+* **Quick Setup**: Run `./scripts/setup_fork.sh` to configure your fork with the upstream repository
+* **Stay in Sync**: Use `./scripts/sync_fork.sh` to keep your fork updated with upstream changes
+* **Detailed Guide**: See [FORK_MANAGEMENT.md](./FORK_MANAGEMENT.md) for comprehensive fork management instructions
+
+### Quick Start for Fork Users
+
+```bash
+# One-time setup
+./scripts/setup_fork.sh
+
+# Regular sync with upstream
+./scripts/sync_fork.sh
+
+# Create feature branch and start developing
+git checkout -b feature/my-feature
+```
+
 ## Extensions and Use Cases
 
 This library is used by [three](https://github.com/foundation-model-stack/foundation-model-stack/network/dependents) dependent projects at IBM.
